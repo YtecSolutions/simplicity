@@ -1,15 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Raleway:wght@700;800&display=swap');
-*{box-sizing:border-box ;}
 
-:root{
+* {
+    box-sizing: border-box;
+}
+
+:root {
 
     /* Variáveis para a pelata de corres do site */
 
---cor-titulo:#4d4d4d;
---cor-texto:#333;
---cor-escura:#000;
---cor-clara:#fff;
---cor-intermediaria:#ececec;
+    --cor-titulo: #4d4d4d;
+    --cor-texto: #333;
+    --cor-escura: #000;
+    --cor-clara: #fff;
+    --cor-intermediaria: #ececec;
 }
 
-html{font-size: 16px;}
+html {
+
+    font-size: 16px;
+}
+
+body {
+    color: var(--cor-texto);
+    font-family: 'Noto Sans', 'sans-serif';
+    background-color: var(--cor-clara);
+}
+
+/* CSS reset de alguns elementos */
+body, h1, h2, p, figure, .menu{
+    margin: 0;
+    padding: 0;
+}
+
+img{max-width: 100%;}
