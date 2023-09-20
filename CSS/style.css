@@ -27,9 +27,47 @@ body {
 }
 
 /* CSS reset de alguns elementos */
-body, h1, h2, p, figure, .menu{
+body,
+h1,
+h2,
+p,
+figure,
+.menu {
     margin: 0;
     padding: 0;
 }
 
-img{max-width: 100%;}
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.5rem;
+
+
+}
+
+h1 a {
+    color: var(--cor-clara);
+    background-color: var(--cor-escura);
+    padding: .3rem 1rem;
+    border-radius: 4px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.menu{
+list-style: none;
+}
