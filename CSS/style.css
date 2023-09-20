@@ -87,8 +87,10 @@ nav h2 a:focus,
     background-color: var(--cor-intermediaria);
 }
 
+/* Usamos display:none; para não exibir a lista de links */
 .menu {
     list-style: none;
+    display: none;
 }
 
 /* Regra para formatar os links contidos na lista/menu */
@@ -107,5 +109,21 @@ nav h2 a:focus,
 2- Negrito
 3- flex com centralização total
 4- altura de 50px  */
+}
+/* Seletor de classes combinadas 
+Esta regra somente irá funcionar quando as Duas Classes estiverem aplicadas Juntas no elemento HTML (No caso, na lista de menu/links).
 
+OBS.: Esta combinação será possível por meio da manipulação programada com JavaScript.*/
+
+.menu.aberto {
+/* O Flex fará alista de links aparecer */
+
+    display: flex;
+    /* Com os links em forma de coluna (vertical) */
+    flex-direction: column;
+    background-color: var(--cor-clara);
+
+    position: absolute;
+    left: 0;
+    right: 0;
 }
