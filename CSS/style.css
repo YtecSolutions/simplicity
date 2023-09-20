@@ -24,6 +24,7 @@ body {
     color: var(--cor-texto);
     font-family: 'Noto Sans', 'sans-serif';
     background-color: var(--cor-clara);
+
 }
 
 /* CSS reset de alguns elementos */
@@ -35,6 +36,7 @@ figure,
 .menu {
     margin: 0;
     padding: 0;
+
 }
 
 img {
@@ -110,13 +112,14 @@ nav h2 a:focus,
 3- flex com centralização total
 4- altura de 50px  */
 }
+
 /* Seletor de classes combinadas 
 Esta regra somente irá funcionar quando as Duas Classes estiverem aplicadas Juntas no elemento HTML (No caso, na lista de menu/links).
 
 OBS.: Esta combinação será possível por meio da manipulação programada com JavaScript.*/
 
 .menu.aberto {
-/* O Flex fará alista de links aparecer */
+    /* O Flex fará alista de links aparecer */
 
     display: flex;
     /* Com os links em forma de coluna (vertical) */
@@ -126,4 +129,14 @@ OBS.: Esta combinação será possível por meio da manipulação programada com
     position: absolute;
     left: 0;
     right: 0;
+}
+
+.destaque {
+    height: 500px;
+    background: url(../imagens/fundo-destaque.jpg);
+    background-attachment: fixed;
+    color: var(--cor-clara);
+    display: flex;
+    align-items: center;
+
 }
