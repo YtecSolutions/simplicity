@@ -136,7 +136,7 @@ OBS.: Esta combinação será possível por meio da manipulação programada com
     height: 88vh;
     background: url(../imagens/fundo-destaque.jpg);
     background-attachment: fixed;
-   
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,7 +144,7 @@ OBS.: Esta combinação será possível por meio da manipulação programada com
 }
 
 .destaque h2,
-.destaque p { 
+.destaque p {
     color: var(--cor-clara);
     text-align: center;
     animation-name: animaDestaque;
@@ -218,7 +218,7 @@ address {
 
     background: url(../imagens/fundo-madeira.jpg);
     background-attachment: fixed;
-   
+
 }
 
 .historia h2 {
@@ -228,16 +228,14 @@ address {
         0.4em -0.3em 0.1em #006;
 }
 
+/* seletor descendente */
 .historia iframe {
     width: 100%;
     max-width: 700px;
     margin-bottom: 2rem;
-    
-    
-
 }
 
-.localizacao iframe{
+.localizacao iframe {
     width: 100%;
     margin-top: 2rem;
 }
@@ -249,9 +247,9 @@ address {
 
 
 
-footer{
+footer {
 
-    background-color:var(--cor-escura);
+    background-color: var(--cor-escura);
     color: var(--cor-clara);
     height: 30vh;
     font-style: bold;
