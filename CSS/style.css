@@ -141,3 +141,7 @@ OBS.: Esta combinação será possível por meio da manipulação programada com
     justify-content: center;
     flex-direction: column;
 }
+
+.destaque h2, .destaque p{
+    text-align: var(--cor-clara);
+}
