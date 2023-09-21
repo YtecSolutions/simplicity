@@ -146,6 +146,11 @@ OBS.: Esta combinação será possível por meio da manipulação programada com
 .destaque h2,
 .destaque p {
     text-align: center;
+    animation-name: animaDestaque;
+    animation-duration: 3s;
+    /* animation-timing-function: ease-out; */
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
 }
 
 /* css 3 CLAMP (Tem forma responsiva)- clamp(recebe,
@@ -157,9 +162,24 @@ tamanho máximo) */
 .destaque h2 {
 
     font-size: clamp(3rem, 10vw, 7rem);
-
+    
 }
 
 .destaque p {
     font-size: clamp(1.5rem, 3vw, 3rem);
+}
+
+/* Regras de animação */
+
+@keyframes animaDestaque {
+
+    from {
+        opacity: 0;
+        transform: translateY(-500px);
+    }
+
+    to {
+        opacity: 1;
+    }
+
 }
