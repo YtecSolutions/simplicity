@@ -134,9 +134,10 @@ OBS.: Esta combinação será possível por meio da manipulação programada com
 .destaque {
     height: 500px;
     background: url(../imagens/fundo-destaque.jpg);
-    background-attachment: fixed;
+    background-attachment: fixed;    
     color: var(--cor-clara);
     display: flex;
     align-items: center;
-
+    justify-content: center;
+    flex-direction: column;
 }
