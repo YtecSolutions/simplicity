@@ -135,7 +135,7 @@ OBS.: Esta combinação será possível por meio da manipulação programada com
 .destaque {
     height: 88vh;
     background: url(../imagens/fundo-destaque.jpg);
-    background-attachment: fixed;    
+    background-attachment: fixed;
     color: var(--cor-clara);
     display: flex;
     align-items: center;
@@ -143,6 +143,23 @@ OBS.: Esta combinação será possível por meio da manipulação programada com
     flex-direction: column;
 }
 
-.destaque h2, .destaque p{
-    text-align: var(--cor-clara);
+.destaque h2,
+.destaque p {
+    text-align: center;
+}
+
+/* css 3 CLAMP (Tem forma responsiva)- clamp(recebe,
+tamanho mínimo,
+tamanho ideal,
+tamanho máximo) */
+
+
+.destaque h2 {
+
+    font-size: clamp(3rem, 10vw, 7rem);
+
+}
+
+.destaque p {
+    font-size: clamp(1.5rem, 3vw, 3rem);
 }
