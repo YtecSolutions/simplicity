@@ -136,7 +136,7 @@ OBS.: Esta combinação será possível por meio da manipulação programada com
     height: 88vh;
     background: url(../imagens/fundo-destaque.jpg);
     background-attachment: fixed;
-    color: var(--cor-clara);
+   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,7 +144,8 @@ OBS.: Esta combinação será possível por meio da manipulação programada com
 }
 
 .destaque h2,
-.destaque p {
+.destaque p { 
+    color: var(--cor-clara);
     text-align: center;
     animation-name: animaDestaque;
     animation-duration: 3s;
@@ -246,10 +247,7 @@ address {
     margin: auto;
 }
 
-.front-end{
-    width: 95vw;
-    margin: auto;
-}
+
 
 footer{
 
