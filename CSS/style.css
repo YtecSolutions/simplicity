@@ -162,7 +162,7 @@ tamanho máximo) */
 .destaque h2 {
 
     font-size: clamp(3rem, 10vw, 7rem);
-    
+
 }
 
 .destaque p {
@@ -183,28 +183,85 @@ tamanho máximo) */
     }
 
 }
-article h2{
 
-padding: 1rem;
-font-size: 1.5rem;
-font-family: Raleway, sans-serif;
-color: var(--cor-titulo);
+article h2 {
+
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: Raleway, sans-serif;
+    color: var(--cor-titulo);
 }
 
-.front-end, .historia, .localizacao{
+.front-end,
+.historia,
+.localizacao {
 
     text-align: center;
 
 }
 
-article p{
-    padding:0.5rem  0;
+article p {
+    padding: 0.5rem 0;
     font-size: 1.2rem;
 }
 
-abbr{
+abbr {
     text-decoration: none;
-    }
-    address{font-style: normal;}
+}
 
+address {
+    font-style: normal;
+}
+
+.historia {
+
+    background: url(../imagens/fundo-madeira.jpg);
+    background-attachment: fixed;
+   
+}
+
+.historia h2 {
+    color: white;
+    text-shadow: 0.2em 0.5em 0.1em #600,
+        -0.3em 0.1em 0.1em #060,
+        0.4em -0.3em 0.1em #006;
+}
+
+.historia iframe {
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 2rem;
     
+    
+
+}
+
+.localizacao iframe{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.limitador {
+    width: 95vw;
+    margin: auto;
+}
+
+.front-end{
+    width: 95vw;
+    margin: auto;
+}
+
+footer{
+
+    background-color:var(--cor-escura);
+    color: var(--cor-clara);
+    height: 30vh;
+    font-style: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
