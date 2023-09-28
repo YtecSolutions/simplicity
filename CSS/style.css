@@ -269,19 +269,72 @@ footer {
 
 /* Regras para as páginas Produtos, Serviços e Contato */
 .conteudo {
-background-color: var(--cor-intermediaria);
-padding: 0.5rem;
-border-radius: 8px;
+    background-color: var(--cor-intermediaria);
+    padding: 0.5rem;
+    border-radius: 8px;
 }
 
-.conteudo h2{
+.conteudo h2 {
 
-padding-left: 0;
-font-size: 1.8rem;
-border-bottom: solid 1px;
-margin-bottom: 1rem;
-
+    padding-left: 0;
+    font-size: 1.8rem;
+    border-bottom: solid 1px;
+    margin-bottom: 1rem;
 }
+
+table {
+    width: 80%;
+    margin: auto;
+    border: solid 1px;
+}
+
+table,
+th,
+td {
+
+    border: solid 1px;
+    /* Remove o espaço entre bordas */
+
+    border-collapse: collapse;
+}
+
+caption {
+
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-bottom: 0, 5rem;
+}
+
+th {
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    padding: 0.7rem;
+}
+
+td {
+    padding: 0.5rem;
+}
+
+td:nth-child(2) {
+    text-align: center;
+}
+
+td:last-child,
+td:last-child {
+    text-align: right;
+}
+
+th:first-child {
+    text-align: last;
+}
+
+
+tr:nth-child(odd){
+    background-color: var(--cor-clara);
+}
+
+
 
 /* 1- Crie uma regra condicional para telas a partir de 570px
 
