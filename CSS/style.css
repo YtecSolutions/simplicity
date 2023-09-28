@@ -62,13 +62,20 @@ h1 a {
 a {
     text-decoration: none;
 }
-
-header {
-
+/* classe só do limitador header */
+header .limitador{
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 12vh;
+}
+header {
+
+    
+    /* deixar fixamente no inicio quando se rola a página */
+    position: sticky;
+    top: 0;
+    background-color: var(--cor-clara);
 }
 
 
@@ -243,6 +250,7 @@ address {
 .limitador {
     width: 95vw;
     margin: auto;
+   
 }
 
 
