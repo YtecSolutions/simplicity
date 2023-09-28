@@ -281,7 +281,7 @@ Reduzir par 200px a altura da imagem contida no artigo Front-End*/
 
 /* 2- Crie uma regra condicional para telas a partir de 900px  com as seguintes alterações
 
--Aumentar o tamanho geral de todos os textos para 18px
+-Aumentar o tamanho geral de todos os textos para 18px (definir tamanho no html)
 - Definir o tamanho máximo da classe limitador para 1000px;
 
 */
