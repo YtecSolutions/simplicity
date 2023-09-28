@@ -62,16 +62,18 @@ h1 a {
 a {
     text-decoration: none;
 }
+
 /* classe só do limitador header */
-header .limitador{
+header .limitador {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 12vh;
 }
+
 header {
 
-    
+
     /* deixar fixamente no inicio quando se rola a página */
     position: sticky;
     top: 0;
@@ -250,10 +252,8 @@ address {
 .limitador {
     width: 95vw;
     margin: auto;
-   
+
 }
-
-
 
 footer {
 
@@ -265,7 +265,66 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+/* 1- Crie uma regra condicional para telas a partir de 570px
 
+Com as seguintes alterações:
+Esconder a palavra Menu
 
+- Habilitar o flex para a classe " menu"
+
+- Definir largura de 100% para os itens dentro do "menu"*/
+/*- Definir largura de 70% para o nav
+
+Reduzir par 200px a altura da imagem contida no artigo Front-End*/
+
+/* 2- Crie uma regra condicional para telas a partir de 900px  com as seguintes alterações
+
+-Aumentar o tamanho geral de todos os textos para 18px
+- Definir o tamanho máximo da classe limitador para 1000px;
+
+*/
+@media screen and (min-width: 570px) {
+
+    /* esconder a palavra menu a partir de 570px */
+    header h2 {
+        display: none;
+    }
+
+    /* Habilitar o flex para a classe " menu" */
+    .menu {
+        display: flex;
+    }
+
+    /* itens dentro da classe menu largura 100% */
+    .menu li {
+        width: 100%;
+    }
+
+    /* Definir largura de 70% para o nav */
+    nav {
+        width: 70%;
+    }
+
+    /* Reduzir par 200px a altura da imagem contida no artigo Front-End*/
+    */ .front-end img {
+        height: 150px;
+    }
+
+}
+
+/* Crie uma regra condicional para telas a partir de 900px  com as seguintes alterações */
+
+@media screen and (min-width: 900px) {
+    html {font-size: 18px;
+        /* Aumentar o tamanho geral de todos os textos para 18px */
+      
+    }
+
+}
+
+/* Definir o tamanho máximo da classe limitador para 1000px; */
+@media screen and (max-width: 900px) {
+    limitador {max-width: 1000px;}
 }
