@@ -267,6 +267,22 @@ footer {
     align-items: center;
 }
 
+/* Regras para as páginas Produtos, Serviços e Contato */
+.conteudo {
+background-color: var(--cor-intermediaria);
+padding: 0.5rem;
+border-radius: 8px;
+}
+
+.conteudo h2{
+
+padding-left: 0;
+font-size: 1.8rem;
+border-bottom: solid 1px;
+margin-bottom: 1rem;
+
+}
+
 /* 1- Crie uma regra condicional para telas a partir de 570px
 
 Com as seguintes alterações:
@@ -317,14 +333,17 @@ Reduzir par 200px a altura da imagem contida no artigo Front-End*/
 /* Crie uma regra condicional para telas a partir de 900px  com as seguintes alterações */
 
 @media screen and (min-width: 900px) {
-    html {font-size: 18px;
+    html {
+        font-size: 18px;
         /* Aumentar o tamanho geral de todos os textos para 18px */
-      
+
     }
 
 }
 
 /* Definir o tamanho máximo da classe limitador para 1000px; */
 @media screen and (max-width: 900px) {
-    limitador {max-width: 1000px;}
+    limitador {
+        max-width: 1000px;
+    }
 }
