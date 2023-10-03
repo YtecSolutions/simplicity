@@ -299,7 +299,7 @@ footer {
 }
 
 .conteudo h2 {
-
+    .conteudo h2::before{content: 🤣;}
     padding-left: 0;
     font-size: 1.8rem;
     border-bottom: solid 1px;
