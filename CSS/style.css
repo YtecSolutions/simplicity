@@ -27,16 +27,38 @@ body {
 
 }
 
+figure {
+    text-align: center;
+}
+
+.redondo img {
+    padding: 10px;
+    border-radius: 100%;
+    transform: scale(.9);
+    transition: 600ms;
+/* filtros CSS */
+
+    filter: blur(2px) brightness(150%);
+}
+/* lembrar do clippath - opcional */
+
+/* Aplicamos o :hover  e o :focus ao seletor de tag a em vez de aplicar no "img". Desta forma, o acionamento funcionará tanto com mouse quanto com teclado */
+
+.redondo a:hover img, .galeria a:focus img{
+border-radius: 10%;     
+transform: scale(1.0);
+filter: blur(0);
+}
+
 /* CSS reset de alguns elementos */
 body,
 h1,
 h2,
-p,
+p,  
 figure,
 .menu {
     margin: 0;
     padding: 0;
-
 }
 
 img {
@@ -77,6 +99,8 @@ header {
     /* deixar fixamente no inicio quando se rola a página */
     position: sticky;
     top: 0;
+    /* z-index garante que o cabeçalho fique fixo */
+    z-index:100 ;
     background-color: var(--cor-clara);
 }
 
@@ -339,13 +363,16 @@ td:last-child {
     position: relative;
 }
 
+/* Se colocar somente positio absolute - ele vai para Viewport, então coloca-se relative também */
 td:last-child::before {
     content: "R$";
-    position: absolute; 
+    position: absolute;
     left: 40px;
 }
 
-.conteudo h2::before{content:"😊";}
+.conteudo h2::before {
+    content: "😊";
+}
 
 
 
