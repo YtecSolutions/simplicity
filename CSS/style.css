@@ -330,9 +330,26 @@ th:first-child {
 }
 
 
-tr:nth-child(odd){
+tr:nth-child(odd) {
     background-color: var(--cor-clara);
 }
+
+/* Pseudo-elemento ::before ::after*/
+td:last-child {
+    position: relative;
+}
+
+td:last-child::before {
+    content: "R$";
+    position: absolute; 
+    left: 40px;
+}
+
+.conteudo h2::before{content:"😊";}
+
+
+
+
 
 
 
