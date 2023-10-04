@@ -387,26 +387,57 @@ form {
     background-color: lightgreen;
 }
 
-input,select,textarea{
-    border: none; 
-    padding: 8 px;
+input,
+select,
+textarea {
+    border: none;
+    padding: 8px;
     height: 40px;
-    border-radius: 4px;    
+    border-radius: 4px;
 }
-textarea{height: auto;}
 
-form div{
+textarea {
+    height: auto;
+}
+
+form div {
     display: flex;
     margin-top: 1rem;
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
-    
 }
 
+label {
+    font-size: .9rem;
+    font-weight: bold;
+    width: 30%;
+}
 
+/* Pseudo-classe :mpt()
+Permite criar exceções para uma regra
+Neste exemplo, estamos aplicando 70% de largura para tudo(*) dentro do "form div "
+exceto o "label"*/
+form div *:not(label) {
+    width: 70%;
+}
 
+button {
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    border: none;
+    padding: 1rem .5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
 
+button.hover,
+button:focus {
+    background-color: var(--cor-clara);
+    color: var(--cor-escura);
+    box-shadow: var(--cor-escura);
+
+}
 
 
 /* 1- Crie uma regra condicional para telas a partir de 570px
