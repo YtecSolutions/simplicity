@@ -36,25 +36,27 @@ figure {
     border-radius: 100%;
     transform: scale(.9);
     transition: 600ms;
-/* filtros CSS */
+    /* filtros CSS */
 
     filter: blur(2px) brightness(150%);
 }
+
 /* lembrar do clippath - opcional */
 
 /* Aplicamos o :hover  e o :focus ao seletor de tag a em vez de aplicar no "img". Desta forma, o acionamento funcionará tanto com mouse quanto com teclado */
 
-.redondo a:hover img, .galeria a:focus img{
-border-radius: 10%;     
-transform: scale(1.0);
-filter: blur(0);
+.redondo a:hover img,
+.galeria a:focus img {
+    border-radius: 10%;
+    transform: scale(1.0);
+    filter: blur(0);
 }
 
 /* CSS reset de alguns elementos */
 body,
 h1,
 h2,
-p,  
+p,
 figure,
 .menu {
     margin: 0;
@@ -100,7 +102,7 @@ header {
     position: sticky;
     top: 0;
     /* z-index garante que o cabeçalho fique fixo */
-    z-index:100 ;
+    z-index: 100;
     background-color: var(--cor-clara);
 }
 
@@ -299,7 +301,10 @@ footer {
 }
 
 .conteudo h2 {
-    .conteudo h2::before{content: 🤣;}
+    .conteudo h2::before {
+        content: 🤣;
+    }
+
     padding-left: 0;
     font-size: 1.8rem;
     border-bottom: solid 1px;
@@ -374,6 +379,30 @@ td:last-child::before {
     content: "😊";
 }
 
+/* Regras para formulários */
+
+form {
+    max-width: 500px;
+    margin: auto;
+    background-color: lightgreen;
+}
+
+input,select,textarea{
+    border: none; 
+    padding: 8 px;
+    height: 40px;
+    border-radius: 4px;    
+}
+textarea{height: auto;}
+
+form div{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    
+}
 
 
 
