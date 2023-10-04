@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos Simplicity</title>
     <link rel="stylesheet" href="CSS/style.css">
+
     <style>
-
-
+        h2::before {
+            content: 🤣;
+        }
     </style>
+
 
 
 </head>
@@ -50,13 +53,13 @@
                 <div></div>
                 <!-- <!-- Nome  -->
                 <label for="nome">Nome</label>
-                <input type="text" name="" id="nome">
+                <input type="text" name="" id="nome" required>
                 </div>
 
                 <div>
                     <!-- e-mail -->
                     <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
                 </div>
                 <!-- data nascimento -->
                 <div>
@@ -73,7 +76,7 @@
                 <div>
                     <!-- assunto -->
                     <label for="assunto">Assunto</label>
-                    <select name="assunto" id="assunto">
+                    <select name="assunto" id="assunto" required>
                         <option value=""></option>
                         <option>Dúvidas</option>
                         <option>Elogios</option>
@@ -87,7 +90,7 @@
                     <!-- mensagem -->
                     <!-- Área para texto -->
                     <label for="name">Mensagem</label>
-                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                    <textarea required name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
                 </div>
                 <button type="submit">Enviar dados</button>
             </form>
