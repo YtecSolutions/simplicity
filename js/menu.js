@@ -12,9 +12,15 @@ console.log(menu)
 const textoBotao = botaoMenu.querySelector("a");
 console.log(textoBotao);
 
-botaoMenu.addEventListener("click", function(event){
-   /* Anular ou prevenir o comportament padrão do link */
+botaoMenu.addEventListener("click", function (event) {
+    /* Anular ou prevenir o comportament padrão do link */
     event.preventDefault();
-menu.classList.toggle("aberto")
+    menu.classList.toggle("aberto");
+
+    if (menu.classList.contains("aberto")) {
+        textoBotao.innerHTML = "Fechar &times;"
+    } else {
+        textoBotao.innerHTML = "Menu &equiv;"
+    }
 
 });
