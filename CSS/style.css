@@ -127,7 +127,7 @@ nav h2 a:focus,
 
 /* Usamos display:none; para não exibir a lista de links */
 .menu {
-    list-style: none;
+   
     display: none;
 }
 
