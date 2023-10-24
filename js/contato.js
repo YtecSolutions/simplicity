@@ -17,7 +17,10 @@ botaoBuscar.addEventListener("click", async function (event) {
     if (campoCep.value.length !== 8) {
         mensagem.textContent = "Digite um CEP válido!";
         mensagem.style.color = "purple";
-        mensagem.style.fontSize = "12px";
+
+
+        // Pare a execução
+        return;
 
     } else {
         // Caso contrario (ou seja, tem 8 digitos), guarde o valor.
@@ -31,5 +34,20 @@ botaoBuscar.addEventListener("click", async function (event) {
     const resposta = await fetch(url);
     //Etapa 3 : extrair os dados da resposta em formato JSON
     const dados = await resposta.json();
-    console.log(dados);
+    // E tapa 4: lidar com os dados de resposta (em caso de erro ou sucesso)
+    if ("erro" in dados) {
+        mensagem.textContent = "CEP inexistente";
+        mensagem.style.color = "red";
+    } else {
+        mensagem.textContent = "CEP encontrado!";
+        mensagem.style.color = "blue"
+
+          campoEndereco.value = dados.logradouro;
+            campoBairro.value = dados.bairro;
+            campoCidade.value = dados.localidade;
+            campoEstado.value = dados.uf;
+
+    }
+
+
 });
