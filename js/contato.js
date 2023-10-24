@@ -7,6 +7,15 @@ const campoCidade = formulario.querySelector("#cidade");
 const campoEstado = formulario.querySelector("#estado");
 const botaoBuscar = formulario.querySelector("#buscar");
 const mensagem = formulario.querySelector("#status");
+//Seleção do campo telefone
+// const campoTelefone = formulario.querySelector(#telefone);
+
+const campoTelefone = $("#telefone");
+// Ativando a máscara para o campo telefone
+$(campoTelefone).mask("(00) 0000-0000");// (11) 2135-0300 
+
+
+
 // Detectando evento de CLICK no botão buscar 
 
 botaoBuscar.addEventListener("click", async function (event) {
